@@ -1,0 +1,103 @@
+$primary-color: #182B5A;
+@font-face {
+    font-family: 'LetoSans';
+    src: local('LetoSans'), url('../public/fonts/LetoSans/LetoSans.otf') format('otf');
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//                              NAVBAR STYLES
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 86px;
+}
+
+.navbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 82%;
+    justify-content: space-between;
+}
+
+.navbar-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-title {
+    color: $primary-color;
+    font-family: "LetoSans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.navbar-buttons {
+    color: #000;
+    display: flex;
+    flex-direction: row;
+    width: 37%; //586
+
+
+}
+
+.navbar-btn {
+    width: 100%;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+//                              MAIN-BANNER STYLES
+
+.main-banner {
+    background: url('../public/img/giant-building-with-sun.png'), lightgray 50% / cover no-repeat;
+    height: 81vh;
+    padding: 25vh 0px 50px 100px; // FIXME:
+}
+
+.main-banner-wrapper {
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-banner-title {
+    color: $primary-color;
+    font-family: Noto Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-banner-button{
+    margin-top: 20px;
+    border: 3px solid $primary-color;
+    background: none;
+    width: 25%;
+    height: 50px; // FIXME:
+}
+
+.main-banner-slider{
+
+    width: 170px;
+    height: 4px;
+}

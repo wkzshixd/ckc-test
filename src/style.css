@@ -11,60 +11,77 @@
   box-sizing: border-box;
 }
 
-.navbar {
+.header {
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  padding: 5px 100px;
   height: 86px;
-}
-
-.navbar-wrapper {
   display: flex;
-  flex-direction: row;
-  width: 82%;
   justify-content: space-between;
+  align-items: center;
 }
 
-.navbar-title-wrapper {
+.logo {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.navbar-title {
+.logo-title {
+  margin-left: 1.25rem;
   color: #182B5A;
-  font-family: "LetoSans";
-  font-size: 22px;
+  font-family: "LetoSans", sans-serif;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.navbar-buttons {
+.nav-btn {
   color: #000;
-  display: flex;
-  flex-direction: row;
-  width: 37%;
-}
-
-.navbar-btn {
-  width: 100%;
-  background-color: white;
+  text-decoration: none;
+  color: black;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  margin-left: 3rem;
 }
 
+.icon {
+  width: 5.5rem;
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 5px 40px;
+  }
+  .nav-btn {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 890px) {
+  .icon {
+    display: inline-flex;
+  }
+  .nav {
+    display: none;
+  }
+}
 .main-banner {
-  background: url("../public/img/giant-building-with-sun.png"), lightgray 50%/cover no-repeat;
+  margin-top: 86px;
+  background: url("../public/img/giant-building-with-sun.png") lightgray 50%/cover no-repeat;
   height: 81vh;
   padding: 25vh 0px 50px 100px;
 }
 
 .main-banner-wrapper {
-  width: 48%;
+  width: 57rem;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -74,7 +91,7 @@
 .main-banner-title {
   color: #182B5A;
   font-family: Noto Sans;
-  font-size: 40px;
+  font-size: 2.6rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -84,13 +101,70 @@
   margin-top: 20px;
   border: 3px solid #182B5A;
   background: none;
-  width: 25%;
+  width: 15rem;
   height: 50px;
 }
 
 .main-banner-slider {
   width: 170px;
   height: 4px;
+}
+
+@media (max-width: 1366px) {
+  .main-banner-wrapper {
+    width: 44rem;
+  }
+  .main-banner-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 890px) {
+  .main-banner {
+    padding: 25vh 0;
+  }
+  .main-banner-wrapper {
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+  }
+  .main-banner-title {
+    width: 30rem;
+  }
+  .main-banner-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.estate-banner {
+  display: flex;
+  height: 650px;
+}
+
+.estate-office-filler {
+  background-color: #182B5A;
+  width: fit-content;
+  height: fit-content;
+  clip-path: polygon(0 0, 100% 0, 84% 100%, 0% 100%);
+}
+
+.estate-office {
+  filter: opacity(0.1);
+  height: 650px;
+}
+
+.estate-line {
+  margin-left: -50px;
+  display: inline;
+}
+
+.estate-pattern {
+  background: #182B5A;
+  clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+  width: 40rem;
+  height: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

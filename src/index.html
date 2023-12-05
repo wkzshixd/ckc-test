@@ -6,23 +6,26 @@
     <title>Document</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar-wrapper">
-        <div class="navbar-title-wrapper">
-          <img class="navbar-logo" src="../public/svg/logo.svg" alt="logo" />
-          <div class="navbar-title">Salesprodazha.ru</div>
-        </div>
-        <div class="navbar-buttons">
-          <button class="navbar-btn">АРЕНДА</button>
-          <button class="navbar-btn">ПРОДАЖА</button>
-          <button class="navbar-btn">ПОКУПКА</button>
-          <button class="navbar-btn">О КОМПАНИИ</button>
-          <button class="navbar-btn">КОНТАКТЫ</button>
-        </div>
+    <header class="header">
+      <div class="logo">
+        <img class="logo-svg" src="../public/svg/logo.svg" alt="logo" />
+        <div class="logo-title">Salesprodazha.ru</div>
       </div>
-    </nav>
+      <nav class="nav">
+        <a class="nav-btn" href="#">АРЕНДА</a>
+        <a class="nav-btn" href="#">ПРОДАЖА</a>
+        <a class="nav-btn" href="#">ПОКУПКА</a>
+        <a class="nav-btn" href="#">О КОМПАНИИ</a>
+        <a class="nav-btn" href="#">КОНТАКТЫ</a>
+      </nav>
+      <img class="icon" src="../public/svg/menu.svg" alt="" />
+    </header>
 
     <div class="main-banner">
       <div class="main-banner-wrapper">
@@ -36,7 +39,27 @@
       </div>
     </div>
 
-    <div class="estate-banner"></div>
+    <div class="estate-banner">
+      <div class="estate-office-filler">
+        <img
+          class="estate-office"
+          src="../public/img/large-office-buildings.png"
+          alt=""
+        />
+      </div>
+
+      <img class="estate-line" src="../public/svg/estate_line.svg" alt="" />
+      <img
+        class="estate-pattern"
+        src="../public/svg/estate_pattern.svg"
+        alt=""
+      />
+      <img
+        class="estate-house"
+        src="../public/img/house-isolated-in-the-field.png"
+        alt=""
+      />
+    </div>
 
     <div class="about-section"></div>
     <div class="contact-section"></div>

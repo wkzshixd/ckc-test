@@ -18,16 +18,16 @@
         <div class="logo-title">Salesprodazha.ru</div>
       </div>
       <nav class="nav">
-        <a class="nav-btn" href="#">АРЕНДА</a>
-        <a class="nav-btn" href="#">ПРОДАЖА</a>
-        <a class="nav-btn" href="#">ПОКУПКА</a>
-        <a class="nav-btn" href="#">О КОМПАНИИ</a>
-        <a class="nav-btn" href="#">КОНТАКТЫ</a>
+        <a class="nav-btn" href="#main-banner">АРЕНДА</a>
+        <a class="nav-btn" href="#main-banner">ПРОДАЖА</a>
+        <a class="nav-btn" href="#estate-banner">ПОКУПКА</a>
+        <a class="nav-btn" href="#about-section">О КОМПАНИИ</a>
+        <a class="nav-btn" href="#contact-section">КОНТАКТЫ</a>
       </nav>
       <img class="icon" src="../public/svg/menu.svg" alt="" />
     </header>
 
-    <div class="main-banner">
+    <div class="main-banner" id="main-banner">
       <div class="main-banner-wrapper">
         <div class="main-banner-title-wrapper">
           <div class="main-banner-title">
@@ -39,7 +39,8 @@
       </div>
     </div>
 
-    <div class="estate-banner">
+    <!-- FIXME: -->
+    <div class="estate-banner" id="estate-banner">
       <div class="estate-office-filler">
         <img
           class="estate-office"
@@ -50,19 +51,74 @@
 
       <img class="estate-line" src="../public/svg/estate_line.svg" alt="" />
       <img
-        class="estate-pattern"
-        src="../public/svg/estate_pattern.svg"
-        alt=""
-      />
-      <img
         class="estate-house"
         src="../public/img/house-isolated-in-the-field.png"
         alt=""
       />
     </div>
 
-    <div class="about-section"></div>
-    <div class="contact-section"></div>
+    <div class="about-section" id="about-section">
+      <div class="about-img-wrapper">
+        <img
+          class="about-pattern"
+          src="../public/svg/about_pattern.svg"
+          alt=""
+        />
+        <img
+          class="about-img"
+          src="../public/img/modern-residential-building.png"
+          alt=""
+        />
+      </div>
+      <div class="about-text-wrapper">
+        <span class="about-title">О нас</span>
+        <p class="about-body">
+          Lorem ipsum – псевдо-латинский текст, который используется для веб
+          дизайна, типографии, оборудования, и распечатки вместо английского
+          текста для того, чтобы сделать ударение не на содержание, а на
+          элементы дизайна. Такой текст также называется как заполнитель.
+          <br class="br" /><br class="br" />
+          Это очень удобный инструмент для моделей (макетов). Он помогает
+          выделить визуальные элементы в документе или презентации, например
+          текст, шрифт или разметка. Lorem ipsum по большей части является
+          элементом латинского текста классического автора и философа Цицерона.
+          Слова и буквы были заменены добавлением или сокращением элементов,
+          поэтому будет совсем неразумно пытаться передать содержание; это не
+          гениально, не правильно, используется даже не понятный латинский.
+        </p>
+        <button class="about-button">Подробнее</button>
+      </div>
+    </div>
+
+    <div class="contact-section" id="contact-section">
+      <div class="form-wrapper">
+        <p class="contact-form-title">
+          Свяжитесь с нами, мы будем рады с Вами сотрудничать
+        </p>
+        <form class="contact-form" action="#">
+          <input
+            class="contact-form-input"
+            type="text"
+            placeholder="Ваше имя"
+            required
+          />
+          <input
+            class="contact-form-input"
+            type="text"
+            placeholder="Ваш телефон"
+            required
+          />
+          <div class="contact-form-checkbox">
+            <input class="checkbox" type="checkbox" id="contactCheck" />
+            <label class="checkbox-text"
+              >Соглашаюсь с<span> политикой конфиденциальности</span>
+            </label>
+          </div>
+          <input class="submit" type="submit" value="Отправить" />
+        </form>
+      </div>
+    </div>
+
     <div class="map-section"></div>
     <div class="footer"></div>
   </body>

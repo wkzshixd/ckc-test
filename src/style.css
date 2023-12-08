@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500;700&display=swap");
 @font-face {
   font-family: "LetoSans";
@@ -36,7 +35,7 @@
   left: 0;
   width: 100%;
   padding: 5px 100px;
-  height: 86px;
+  height: 96px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,7 +51,7 @@
   margin-left: 1.25rem;
   color: #182B5A;
   font-family: "LetoSans", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.35rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -70,11 +69,22 @@
 }
 
 .icon {
-  width: 5.4rem;
+  height: 50px;
   display: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1366px) {
+  .logo-title {
+    font-size: 1.1rem;
+  }
+  .header {
+    padding: 5px 40px;
+  }
+  .nav-btn {
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 1170px) {
   .header {
     padding: 5px 40px;
   }
@@ -83,24 +93,56 @@
   }
 }
 @media (max-width: 1024px) {
+  .header {
+    height: 70px;
+    padding: 5px 30px 5px 30px;
+  }
+  .logo-title {
+    font-size: 0.9rem;
+  }
+  .logo-svg {
+    width: 30px;
+  }
   .nav-btn {
     font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  .header {
+    max-width: 100vw;
   }
 }
 @media (max-width: 890px) {
   .icon {
     display: inline-flex;
   }
+  .icon {
+    height: 70px;
+  }
   .nav {
     display: none;
+  }
+}
+@media (max-width: 480px) {
+  .header {
+    padding: 5px 20px 5px 20px;
+    height: 50px;
+  }
+  .logo-title {
+    font-size: 0.6rem;
+  }
+  .logo-svg {
+    width: 22px;
+  }
+  .icon {
+    height: 50px;
   }
 }
 .main-banner {
   margin-top: 86px;
   background: url("../public/img/giant-building-with-sun.png") lightgray 50%/cover no-repeat;
   max-width: 1920px;
-  height: 81vh;
-  padding: 25vh 0px 50px 100px;
+  height: 710px;
+  padding: 220px 0px 50px 100px;
 }
 
 .main-banner-wrapper {
@@ -136,6 +178,9 @@
 }
 
 @media (max-width: 1366px) {
+  .main-banner {
+    margin-top: 70px;
+  }
   .main-banner-wrapper {
     width: 44rem;
   }
@@ -145,11 +190,11 @@
 }
 @media (max-width: 890px) {
   .main-banner {
-    padding: 25vh 0;
+    padding: 220px 0;
   }
   .main-banner-wrapper {
     width: 100vw;
-    height: 50vh;
+    height: 440px;
     align-items: center;
   }
   .main-banner-title {
@@ -165,8 +210,9 @@
 }
 @media (max-width: 480px) {
   .main-banner {
+    margin-top: 50px;
     display: flex;
-    height: 40vh;
+    height: 300px;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -196,6 +242,7 @@
   display: flex;
   background: url(../public/svg/estate_pattern.svg) #182B5A no-repeat 100%;
   height: 740px;
+  max-width: 100vw;
 }
 
 .estate-office-filler {
@@ -229,32 +276,40 @@
 }
 
 .about-section {
+  padding: 100px 7vw;
+  height: 740px;
+}
+
+.about-section-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10vh 7vw;
-  height: 80vh;
 }
 
 .about-img-wrapper {
   display: grid;
   position: relative;
-  grid-template-columns: 12;
+  grid-template-columns: 30px;
+  grid-template-rows: 30px;
+  width: 43vw;
+  height: 540px;
 }
 
 .about-pattern {
-  width: 40vw;
+  background-image: url("../public/svg/about_pattern.svg");
+  width: 41vw;
+  height: 510px;
   background-color: #182B5A;
-  grid-row: 1;
-  grid-column: 1;
 }
 
 .about-img {
+  position: relative;
+  background: url("../public/img/modern-residential-building.png") 100%/cover no-repeat;
+  background-position: center;
+  grid-row: 2;
+  grid-column: 2;
   width: 41vw;
-  grid-row: 1;
-  grid-column: 1;
-  padding-top: 2.5vh;
-  padding-left: 1.5vw;
+  height: 510px;
 }
 
 .about-text-wrapper {
@@ -262,7 +317,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 41vw;
-  height: 45vh;
+  height: 450px;
 }
 
 .about-title {
@@ -301,27 +356,35 @@
 
 @media (max-width: 1366px) {
   .about-section {
-    padding: 4vh 7vw;
-    height: 90vh;
+    padding: 50px 7vw;
+    height: 660px;
   }
   .about-text-wrapper {
-    height: 70vh;
+    height: 440px;
+  }
+  .about-body {
+    line-height: 1.35rem;
   }
 }
 @media (max-width: 1024px) {
   .about-section {
-    padding: 10vh 3vw;
+    padding: 75px 3vw;
     height: fit-content;
+  }
+  .about-img-wrapper {
+    height: 400px;
   }
   .about-pattern {
     width: 35vw;
+    height: 350px;
   }
   .about-img {
     width: 36vw;
+    height: 350px;
   }
   .about-text-wrapper {
     width: 55vw;
-    min-height: 40vh;
+    min-height: 350px;
     height: fit-content;
   }
   .about-title {
@@ -339,21 +402,27 @@
     display: none;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 750px) {
   .about-section {
     padding: 0vh 7vw;
   }
   .about-pattern {
     display: none;
   }
+  .about-img-wrapper {
+    display: none;
+  }
   .about-img {
     display: none;
   }
+  .about-section-wrapper {
+    height: 420px;
+  }
   .about-text-wrapper {
-    padding: 5vh 0;
+    padding: 30px 0;
     align-items: center;
     width: 100%;
-    height: 80%;
+    height: 100%;
     text-align: center;
   }
   .about-title {
@@ -370,14 +439,19 @@
     display: none;
   }
 }
+@media (max-width: 580px) {
+  .about-section-wrapper {
+    height: 500px;
+  }
+}
 .contact-section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 440px;
   background-color: #182B5A;
   background-image: url("../public/svg/contact_building_1.svg"), url("../public/svg/contact_building_2.svg");
-  background-position: bottom left 5vw, bottom right 7vw;
+  background-position: bottom -10px left 5vw, bottom -10px right 7vw;
   background-size: 28vw, 20vw;
   background-repeat: no-repeat;
 }
@@ -387,7 +461,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  height: 45vh;
+  height: 400px;
   width: 70%;
   color: #FEFEFE;
 }
@@ -454,6 +528,7 @@
 
 .submit {
   text-transform: uppercase;
+  cursor: pointer;
   background: none;
   border: 3px solid #FEFEFE;
   color: #FEFEFE;
@@ -494,6 +569,277 @@
   }
   .contact-form-input {
     width: 80vw;
+  }
+}
+.map-section {
+  display: flex;
+  max-width: 100vw;
+  height: 400px;
+}
+
+.map {
+  width: 50vw;
+  height: 400px;
+}
+
+.info-title {
+  color: #182B5A;
+  font-family: Noto Sans;
+  font-size: 2.25rem;
+  width: 40vw;
+  font-weight: 700;
+  margin-bottom: 1vw;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+}
+
+.info-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 25vw;
+  height: 180px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact-info-svg {
+  height: 25px;
+  width: 25px;
+}
+
+.company-info-wrapper {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 25% 25% 25% 25%;
+  align-items: center;
+  color: #000;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  height: 160px;
+  width: 15vw;
+}
+
+.inn, .bic, .okpo, .ogrn {
+  color: #182B5A;
+}
+
+.inn {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.bic {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.okpo {
+  grid-row: 3;
+  grid-column: 1;
+}
+
+.ogrn {
+  grid-row: 4;
+  grid-column: 1;
+}
+
+.inn-body {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.bic-body {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.okpo-body {
+  grid-row: 3;
+  grid-column: 2;
+}
+
+.ogrn-body {
+  grid-row: 4;
+  grid-column: 2;
+}
+
+@media (max-width: 1825px) {
+  .map-section {
+    height: 600px;
+  }
+  .map {
+    height: 600px;
+  }
+  .info-wrapper {
+    flex-direction: column;
+    align-items: start;
+    width: 40vw;
+  }
+  .info-title {
+    font-size: 2rem;
+  }
+  .company-info-wrapper {
+    grid-template-columns: 30% 70%;
+  }
+}
+@media (max-width: 1366px) {
+  .info-title {
+    font-size: 1.5rem;
+  }
+  .contact-info-wrapper {
+    width: 40vw;
+  }
+  .company-info-wrapper {
+    width: 30vw;
+    grid-template-columns: 5vw 25vw;
+  }
+}
+@media (max-width: 1024px) {
+  .map-section {
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: 620px;
+  }
+  .map {
+    height: 300px;
+    width: 100vw;
+  }
+  .info-section {
+    width: 100vw;
+    height: 320px;
+  }
+  .contact-info {
+    font-size: 0.8rem;
+  }
+  .contact-info-svg {
+    width: 20px;
+  }
+  .company-info-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .info-wrapper {
+    flex-direction: row;
+    width: 70%;
+  }
+  .info-title {
+    font-size: 1.5rem;
+    width: 60vw;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .contact-info-wrapper {
+    width: 40vw;
+    height: 150px;
+  }
+  .company-info-wrapper {
+    font-size: 0.8rem;
+  }
+  .inn, .bic, .okpo, .ogrn {
+    font-weight: 500;
+  }
+}
+@media (max-width: 810px) {
+  .company-info-wrapper {
+    width: 40vw;
+    grid-template-columns: 20% 80%;
+  }
+}
+@media (max-width: 480px) {
+  .map-section {
+    height: 700px;
+  }
+  .map {
+    height: 300px;
+  }
+  .info-section {
+    height: 400px;
+  }
+  .info-title {
+    font-size: 1rem;
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .info-wrapper {
+    flex-direction: column;
+    width: 80vw;
+    align-items: center;
+  }
+  .contact-info {
+    justify-content: center;
+  }
+  .contact-info-wrapper {
+    width: 100%;
+  }
+  .company-info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.footer {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  background-color: #182B5A;
+  background-image: url("../public/svg/footer.svg");
+  align-items: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 220px;
+  margin-left: 100px;
+}
+
+.footer-text {
+  color: #FEFEFE;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .footer-wrapper {
+    margin-left: 30px;
+  }
+  .footer-text {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    padding: 25px;
+  }
+  .footer-wrapper {
+    margin: 0;
+  }
+  .footer-text {
+    text-align: center;
   }
 }
 

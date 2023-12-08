@@ -58,35 +58,30 @@
     </div>
 
     <div class="about-section" id="about-section">
-      <div class="about-img-wrapper">
-        <img
-          class="about-pattern"
-          src="../public/svg/about_pattern.svg"
-          alt=""
-        />
-        <img
-          class="about-img"
-          src="../public/img/modern-residential-building.png"
-          alt=""
-        />
-      </div>
-      <div class="about-text-wrapper">
-        <span class="about-title">О нас</span>
-        <p class="about-body">
-          Lorem ipsum – псевдо-латинский текст, который используется для веб
-          дизайна, типографии, оборудования, и распечатки вместо английского
-          текста для того, чтобы сделать ударение не на содержание, а на
-          элементы дизайна. Такой текст также называется как заполнитель.
-          <br class="br" /><br class="br" />
-          Это очень удобный инструмент для моделей (макетов). Он помогает
-          выделить визуальные элементы в документе или презентации, например
-          текст, шрифт или разметка. Lorem ipsum по большей части является
-          элементом латинского текста классического автора и философа Цицерона.
-          Слова и буквы были заменены добавлением или сокращением элементов,
-          поэтому будет совсем неразумно пытаться передать содержание; это не
-          гениально, не правильно, используется даже не понятный латинский.
-        </p>
-        <button class="about-button">Подробнее</button>
+      <div class="about-section-wrapper">
+        <div class="about-img-wrapper">
+          <div class="about-pattern"></div>
+          <div class="about-img"></div>
+        </div>
+        <div class="about-text-wrapper">
+          <span class="about-title">О нас</span>
+          <p class="about-body">
+            Lorem ipsum – псевдо-латинский текст, который используется для веб
+            дизайна, типографии, оборудования, и распечатки вместо английского
+            текста для того, чтобы сделать ударение не на содержание, а на
+            элементы дизайна. Такой текст также называется как заполнитель.
+            <br class="br" /><br class="br" />
+            Это очень удобный инструмент для моделей (макетов). Он помогает
+            выделить визуальные элементы в документе или презентации, например
+            текст, шрифт или разметка. Lorem ipsum по большей части является
+            элементом латинского текста классического автора и философа
+            Цицерона. Слова и буквы были заменены добавлением или сокращением
+            элементов, поэтому будет совсем неразумно пытаться передать
+            содержание; это не гениально, не правильно, используется даже не
+            понятный латинский.
+          </p>
+          <button class="about-button">Подробнее</button>
+        </div>
       </div>
     </div>
 
@@ -119,7 +114,85 @@
       </div>
     </div>
 
-    <div class="map-section"></div>
-    <div class="footer"></div>
+    <div class="map-section">
+      <iframe
+        class="map"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e03ad33cec5b2c02fd02245593ef7465912dedb0bfb2074a374466265622032&amp;source=constructor"
+        width="1280"
+        height="720"
+        frameborder="0"
+      ></iframe>
+      <div class="info-section">
+        <div class="info-title">Контакты и юридическая информация</div>
+        <div class="info-wrapper">
+          <div class="contact-info-wrapper">
+            <div class="contact-info contact-info-map">
+              <img
+                src="../public/svg/map-icon.svg"
+                class="contact-info-svg contact-info-map-svg"
+              />
+              <div class="contact-info-text">
+                121069, г. Москва, ул. Поварская, дом 23, строение 4
+              </div>
+            </div>
+            <div class="contact-info contact-info-phone">
+              <img
+                src="../public/svg/phone-icon.svg"
+                class="contact-info-svg contact-info-phone-svg"
+              />
+              <div class="contact-info-text">+7 (495)258-6100</div>
+            </div>
+            <div class="contact-info contact-info-mail">
+              <img
+                src="../public/svg/mail-icon.svg"
+                class="contact-info-svg contact-info-mail-svg"
+              />
+              <div class="contact-info-text">info@sksbank.ru</div>
+            </div>
+            <div class="contact-info contact-info-hours">
+              <img
+                src="../public/svg/clock-icon.svg"
+                class="contact-info-svg contact-info-hours-svg"
+              />
+              <div class="contact-info-text">Пн-Пт: 9:00 - 18:00</div>
+            </div>
+          </div>
+          <div class="company-info-wrapper">
+            <span class="inn">ИНН:</span>
+            <span class="inn-body">7750005845</span>
+            <br />
+            <span class="bic">БИК:</span>
+            <span class="bic-body">044525247</span>
+            <br />
+            <span class="okpo">ОКПО:</span>
+            <span class="okpo-body">044525247</span>
+            <br />
+            <span class="ogrn">ОГРН:</span>
+            <span class="ogrn-body">1137711000096 (05.07.2013)</span>
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-wrapper">
+        <p class="footer-text">
+          +7 (495)258-6100 | Банк "СКС" (ООО) | info@sksbank.ru
+        </p>
+        <p class="footer-text">
+          Генеральная лицензия №3224 от 9 июля 2014 года
+        </p>
+        <p class="footer-text">
+          Сведения о лицах, под контролем либо значительным влиянием которых
+          находится кредитная организация
+        </p>
+        <p class="footer-text">
+          Раскрытие информации профессиональным участником рынка ценных бумаг
+        </p>
+        <p class="footer-text">
+          Информация о максимальных процентных ставках по вкладам физических лиц
+        </p>
+      </div>
+    </div>
   </body>
 </html>

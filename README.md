@@ -12,6 +12,8 @@
   Estate banner is done, that was a real challenge. Still have some minor issues that i will fix in the next couple days. (aprox. time usage - 10~ hours)
 - **09-10.12.2023**
   Project completed. Fixed all the issues, added navbar animations with throttle, some buttons hovers, made a full-working slider on main banner (aprox. time usage - 4~ hours)
+  
+___
 
 - **04.12.2023**
   Начало проекта

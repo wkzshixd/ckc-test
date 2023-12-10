@@ -956,6 +956,12 @@ body {
     accent-color: #081b4b;
     cursor: pointer;
     border-radius: none;
+    -moz-border: none;
+    -ms-border: none;
+    -webkit-border: none;
+    -moz-outline: none;
+    -ms-outline: none;
+    -webkit-outline: none;
     border: none;
     outline: none;
 }

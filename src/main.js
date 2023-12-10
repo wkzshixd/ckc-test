@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Изначальное удаление класса aktive
   links.forEach(link => {
-    console.log(link.classList.contains('second'))
     link.classList.contains('first') ? null : link.classList.remove('active');
   })
   // Функция для подсветки кнопки в навбаре

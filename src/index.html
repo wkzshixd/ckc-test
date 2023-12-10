@@ -3,31 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Salesprodazha.ru</title>
     <script src="main.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/x-icon" href="../public/svg/logo.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
-      <div class="logo">
+      <a href="#" class="logo">
         <img class="logo-svg" src="../public/svg/logo.svg" alt="logo" />
         <div class="logo-title">Salesprodazha.ru</div>
-      </div>
+      </a>
       <nav class="nav">
-        <a class="nav-btn" href="#main-banner">АРЕНДА</a>
-        <a class="nav-btn" href="#main-banner">ПРОДАЖА</a>
-        <a class="nav-btn" href="#estate-banner">ПОКУПКА</a>
-        <a class="nav-btn" href="#about-section">О КОМПАНИИ</a>
-        <a class="nav-btn" href="#contact-section">КОНТАКТЫ</a>
+        <a class="nav-btn active" href="#main-banner">АРЕНДА</a>
+        <a class="nav-btn active" href="#main-banner">ПРОДАЖА</a>
+        <a class="nav-btn active" href="#estate-banner">ПОКУПКА</a>
+        <a class="nav-btn active" href="#about-section">О КОМПАНИИ</a>
+        <a class="nav-btn active" href="#contact-section">КОНТАКТЫ</a>
       </nav>
       <img class="icon" src="../public/svg/menu.svg" alt="" />
     </header>
 
-    <div class="main-banner" id="main-banner">
+    <div class="main-banner section" id="main-banner">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../public/img/giant-building-with-sun.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/img/giant-building-with-sun.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/img/giant-building-with-sun.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../public/img/giant-building-with-sun.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
       <div class="main-banner-wrapper">
         <div class="main-banner-title-wrapper">
           <div class="main-banner-title">
@@ -35,12 +57,10 @@
           </div>
           <button class="main-banner-button">ЗАКАЗАТЬ УСЛУГИ</button>
         </div>
-        <img class="main-banner-slider" src="../public/svg/slider.svg" alt="" />
       </div>
     </div>
 
-    <!-- FIXME: -->
-    <div class="estate-banner" id="estate-banner">
+    <div class="estate-banner section" id="estate-banner">
       <div class="estate-commertial">
         <p class="estate-titles estate-commercial-title">
           Коммерческая недвижимость
@@ -55,7 +75,7 @@
       <div class="estate-house"></div>
     </div>
 
-    <div class="about-section" id="about-section">
+    <div class="about-section section" id="about-section">
       <div class="about-section-wrapper">
         <div class="about-img-wrapper">
           <div class="about-pattern"></div>
@@ -83,7 +103,7 @@
       </div>
     </div>
 
-    <div class="contact-section" id="contact-section">
+    <div class="contact-section section" id="contact-section">
       <div class="form-wrapper">
         <p class="contact-form-title">
           Свяжитесь с нами, мы будем рады с Вами сотрудничать
@@ -104,7 +124,8 @@
           <div class="contact-form-checkbox">
             <input class="checkbox" type="checkbox" id="contactCheck" />
             <label class="checkbox-text"
-              >Соглашаюсь с<span> политикой конфиденциальности</span>
+              >Соглашаюсь с
+              <a target="blank" href="#">политикой конфиденциальности</a>
             </label>
           </div>
           <input class="submit" type="submit" value="Отправить" />
@@ -112,7 +133,7 @@
       </div>
     </div>
 
-    <div class="map-section">
+    <div class="map-section section">
       <iframe
         class="map"
         src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e03ad33cec5b2c02fd02245593ef7465912dedb0bfb2074a374466265622032&amp;source=constructor"
@@ -133,20 +154,23 @@
                 121069, г. Москва, ул. Поварская, дом 23, строение 4
               </div>
             </div>
-            <div class="contact-info contact-info-phone">
+            <a href="tel:+74952586100" class="contact-info contact-info-phone">
               <img
                 src="../public/svg/phone-icon.svg"
                 class="contact-info-svg contact-info-phone-svg"
               />
               <div class="contact-info-text">+7 (495)258-6100</div>
-            </div>
-            <div class="contact-info contact-info-mail">
+            </a>
+            <a
+              href="mailto:info@sksbank.ru"
+              class="contact-info contact-info-mail"
+            >
               <img
                 src="../public/svg/mail-icon.svg"
                 class="contact-info-svg contact-info-mail-svg"
               />
               <div class="contact-info-text">info@sksbank.ru</div>
-            </div>
+            </a>
             <div class="contact-info contact-info-hours">
               <img
                 src="../public/svg/clock-icon.svg"
@@ -155,6 +179,7 @@
               <div class="contact-info-text">Пн-Пт: 9:00 - 18:00</div>
             </div>
           </div>
+          <div class="hor-line"></div>
           <div class="company-info-wrapper">
             <span class="inn">ИНН:</span>
             <span class="inn-body">7750005845</span>
@@ -175,7 +200,8 @@
     <div class="footer">
       <div class="footer-wrapper">
         <p class="footer-text">
-          +7 (495)258-6100 | Банк "СКС" (ООО) | info@sksbank.ru
+          <a href="tel:+74952586100">+7 (495)258-6100</a> | Банк "СКС" (ООО) |
+          <a href="mailto:info@sksbank.ru">info@sksbank.ru</a>
         </p>
         <p class="footer-text">
           Генеральная лицензия №3224 от 9 июля 2014 года
@@ -192,5 +218,6 @@
         </p>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>

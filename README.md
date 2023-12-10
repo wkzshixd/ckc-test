@@ -13,6 +13,8 @@
 - **09-10.12.2023**
   Project completed. Fixed all the issues, added navbar animations with throttle, some buttons hovers, made a full-working slider on main banner (aprox. time usage - 4~ hours)
 
+///
+
 - **04.12.2023**
   Начало проекта
 - **05.12.2023**

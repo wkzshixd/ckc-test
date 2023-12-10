@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let swiper = new Swiper(".swiper", {
     pagination: {
       el: ".swiper-pagination",
-      clickable: false,
+      clickable: true,
       renderBullet: function (index, className) {
         return '<div class="' + className + '" src="../public/svg/slider.svg"></div>';
       },
@@ -52,7 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Изначальное удаление класса aktive
   links.forEach(link => {
-    link.getAttribute('href') != '#main-banner' ? link.classList.remove('active') : null;
+    console.log(link.classList.contains('second'))
+    link.classList.contains('first') ? null : link.classList.remove('active');
   })
   // Функция для подсветки кнопки в навбаре
   function highlightNavbarLink() {

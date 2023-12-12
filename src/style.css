@@ -146,10 +146,45 @@ body {
   }
 }
 @media (max-width: 890px) {
-  .icon {
-    display: inline-flex;
+  .menu-active {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    padding: 0px;
+    background-color: white;
+  }
+  .menu-active .logo {
+    position: fixed;
+    top: 12.5px;
+    left: 30px;
+    height: fit-content;
+  }
+  .menu-active nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 60px;
+    width: 100%;
+    height: calc(100vh - 60px);
+    border-top: 2px solid rgb(24, 43, 90);
+  }
+  .menu-active nav .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 2px solid rgb(24, 43, 90);
+    font-size: 1.4rem;
   }
   .icon {
+    position: fixed;
+    top: 0px;
+    right: 30px;
+    display: inline-flex;
     height: 60px;
   }
   .nav {
@@ -161,14 +196,55 @@ body {
     padding: 5px 20px 5px 20px;
     height: 50px;
   }
+  .menu-active {
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    padding: 0px;
+    background-color: white;
+  }
+  .menu-active .logo {
+    position: fixed;
+    top: 12.5px;
+    left: 20px;
+    height: fit-content;
+  }
+  .menu-active nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    width: 100%;
+    height: calc(100vh - 50px);
+    border-top: 2px solid rgb(24, 43, 90);
+  }
+  .menu-active nav .nav-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 100%;
+    border-bottom: 2px solid rgb(24, 43, 90);
+    font-size: 1.4rem;
+  }
+  .icon {
+    position: fixed;
+    top: 0px;
+    right: 30px;
+    display: inline-flex;
+    height: 50px;
+  }
+  .nav {
+    display: none;
+  }
   .logo-title {
     font-size: 0.8rem;
   }
   .logo-svg {
     width: 22px;
-  }
-  .icon {
-    height: 50px;
   }
 }
 .main-banner {
@@ -907,6 +983,12 @@ body {
   accent-color: #081b4b;
   cursor: pointer;
   border-radius: none;
+  -moz-border: none;
+  -ms-border: none;
+  -webkit-border: none;
+  -moz-outline: none;
+  -ms-outline: none;
+  -webkit-outline: none;
   border: none;
   outline: none;
 }

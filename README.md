@@ -1,5 +1,6 @@
 **github pages:** https://wkzshixd.github.io/ckc-test/src/index.html
 
+EN 
 - **04.12.2023**
   Start of the project
 - **05.12.2023**
@@ -12,9 +13,12 @@
   Estate banner is done, that was a real challenge. Still have some minor issues that i will fix in the next couple days. (aprox. time usage - 10~ hours)
 - **09-10.12.2023**
   Project completed. Fixed all the issues, added navbar animations with throttle, some buttons hovers, made a full-working slider on main banner (aprox. time usage - 4~ hours)
-
+- **11.12.2023**
+  I've decided to add a modal window in mobile/tablet versions, so i did it. That task was pretty easy, i had no problems at all (aprox. time usage - 2-3~ hours)
+  
 ---
 
+RU
 - **04.12.2023**
   Начало проекта
 - **05.12.2023**
@@ -27,3 +31,5 @@
   Баннер недвижимости готов, это было настоящим испытанием. Еще остались небольшие проблемы, которые я исправлю в ближайшие пару дней. (приблизительное затраченное время - 10~ часов)
 - **09-10.12.2023**
   Проект завершен. Исправлены все проблемы, добавлена анимация навигатора с дросселем, наведение некоторых кнопок, сделан полноценный слайдер на главном баннере (приблизительное затраченное время - 4~ часа)
+- **11.12.2023**
+  Я решил добавить модальное окно в версии для мобильных устройств и планшетов. Эта задача была довольно простой, у меня не возникло никаких проблем (затраченное время примерно 2-3 часа).
